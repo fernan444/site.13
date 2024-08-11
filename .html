@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraBooks - Vintage Style</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+    <header class="cabeçalho">
+        <div class="container">
+            <div class="container__imagem">
+                <img src="logo.png" alt="AluraBooks Logo">
+            </div>
+            <input type="checkbox" class="container__botao" id="menu-toggle">
+            <nav class="lista-menu">
+                <h2 class="lista-menu__titulo">Menu</h2>
+                <a href="#" class="lista-menu__link">Home</a>
+                <a href="#" class="lista-menu__link">Sobre</a>
+                <a href="#" class="lista-menu__link">Livros</a>
+                <a href="#" class="lista-menu__link">Contato</a>
+            </nav>
+            <label for="menu-toggle" class="cabeçalho__menu-hamburguer"></label>
+        </div>
+    </header>
+
+    <section class="banner">
+        <h1 class="banner__titulo">Bem-vindo ao AluraBooks</h1>
+        <p class="banner__texto">Explore uma vasta coleção de livros com um estilo clássico.</p>
+        <input type="text" class="banner__pesquisa" placeholder="Buscar livros...">
+    </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Livros em Destaque</h2>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- Livros Adicionados -->
+                <div class="swiper-slide">
+                    <img src="a-historia-da-mitologia.jpg" alt="Livro 1">
+                    <button class="btn-leer" data-book="book1">Ler Trecho</button>
+                </div>
+                <div class="swiper-slide">
+                    <img src="terra_sonhos_capa.webp" alt="Livro 2">
+                    <button class="btn-leer" data-book="book2">Ler Trecho</button>
+                </div>
+                <div class="swiper-slide">
+                    <img src="canva-capa-de-livro-a-laranja-e-amarelo-com-fotografia-de-estrelas-para-espaço-de-ficção-científica-nAFLfhLmuyc.jpg" alt="Livro 3">
+                    <button class="btn-leer" data-book="book3">Ler Trecho</button>
+                </div>
+                <div class="swiper-slide">
+                    <img src="miseraveis.jpg" alt="Livro 4">
+                    <button class="btn-leer" data-book="book4">Ler Trecho</button>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- Modal para Livros -->
+    <div id="book-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-text"></p>
+        </div>
+    </div>
+
+    <section class="tópicos">
+        <h2 class="tópicos__titulo">Tópicos Populares</h2>
+        <div class="tópicos__lista">
+            <div class="tópicos__item">
+                <a href="#" class="tópicos__link">Literatura Clássica</a>
+            </div>
+            <div class="tópicos__item">
+                <a href="#" class="tópicos__link">Ficção Científica</a>
+            </div>
+            <div class="tópicos__item">
+                <a href="#" class="tópicos__link">História</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contato">
+        <h2 class="contato__titulo">Entre em Contato</h2>
+        <p class="contato__texto">Envie-nos uma mensagem e responderemos o mais breve possível.</p>
+        <input type="email" class="contato__email" placeholder="Seu e-mail">
+    </section>
+
+    <footer class="rodapé">
+        <p>&copy; 2024 AluraBooks. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
